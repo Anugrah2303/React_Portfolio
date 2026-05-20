@@ -1,16 +1,15 @@
-import { FaGithub, FaLinkedin, FaWhatsapp, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaPaintBrush, FaServer, FaMobileAlt, FaCode, FaDatabase, FaLocationArrow } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaWhatsapp, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaPaintBrush, FaServer, FaMobileAlt, FaCode, FaDatabase, FaLocationArrow, FaCalendarAlt } from "react-icons/fa"
 import type { LinkType, navLinksData, previewDataInterface, ProjectCardProps, verticalTimelineProps, whatAmIDoingProps, AllSkillData } from "../types/type"
 import { IoMdMail } from "react-icons/io"
 import { SiTailwindcss, SiJavascript, SiTypescript, SiGsap, SiMongodb, SiC, SiCplusplus, SiExpress, SiGit, SiGithub, SiNpm, SiVite, SiEslint, SiTwilio, SiPostman, SiNodemon, SiCloudinary, SiZod, SiAxios, SiReactquery, SiJsonwebtokens, SiReactrouter, SiRedux, SiAuth0, SiVercel, SiNetlify, SiGooglechrome, SiNextdotjs, SiReact, SiDotenv, SiRender, SiGreensock, SiScrollreveal } from "react-icons/si"
 import cartSutraImg from "../assets/images/cartSutra-thumbnail.png"
-import { FaCableCar } from "react-icons/fa6"
-import { FcContacts } from "react-icons/fc"
 import { HiAcademicCap } from "react-icons/hi"
 import { PiCertificateFill } from "react-icons/pi"
 import { MdEmail } from "react-icons/md"
 import { VscVscode } from "react-icons/vsc"
 import { TbApi, TbCookie, TbLoader, TbWorld } from "react-icons/tb"
 import { FiUploadCloud } from "react-icons/fi"
+import { LuContactRound } from "react-icons/lu"
 
 export const previewData: previewDataInterface[] = [
     {
@@ -19,12 +18,12 @@ export const previewData: previewDataInterface[] = [
         data: "23bmiit081@gmail.com",
     },
     {
-        Icon: FcContacts,
+        Icon: LuContactRound,
         title: "Mobile",
         data: "+91 90238 35422",
     },
     {
-        Icon: FaCableCar,
+        Icon: FaCalendarAlt,
         title: "Data-Of-Birth",
         data: "March 23, 2006",
     },
@@ -108,218 +107,6 @@ export const whatAmIDoing: whatAmIDoingProps[] = [
 
 export const AboutMeDescription: string = "Passionate Full Stack Developer crafting modern web experiences using MERN stack with TypeScript, clean design, and performance-first approach.";
 
-// export const allSkills: AllSkillData[] = [
-//     {
-//         title: "Skills",
-//         data: [
-//             {
-//                 title: "HTML",
-//                 Icon: FaHtml5,
-//                 options: {
-//                     color: "#E34F26",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "CSS",
-//                 Icon: FaCss3Alt,
-//                 options: {
-//                     color: "#1572B6",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "JavaScript",
-//                 Icon: SiJavascript,
-//                 options: {
-//                     color: "#F7DF1E",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "TypeScript",
-//                 Icon: SiTypescript,
-//                 options: {
-//                     color: "#3178C6",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "React",
-//                 Icon: FaReact,
-//                 options: {
-//                     color: "#61DAFB",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "Tailwind CSS",
-//                 Icon: SiTailwindcss,
-//                 options: {
-//                     color: "#06B6D4",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "Bootstrap",
-//                 Icon: FaBootstrap,
-//                 options: {
-//                     color: "#7952B3",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "GSAP",
-//                 Icon: SiGsap,
-//                 options: {
-//                     color: "#88CE02",
-//                     size: 35
-//                 }
-//             },
-
-//             {
-//                 title: "Node",
-//                 Icon: FaNodeJs,
-//                 options: {
-//                     color: "#339933",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "Express",
-//                 Icon: SiExpress,
-//                 options: {
-//                     color: "#000000",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "MongoDB",
-//                 Icon: SiMongodb,
-//                 options: {
-//                     color: "#47A248",
-//                     size: 35
-//                 }
-//             },
-
-//             {
-//                 title: "C",
-//                 Icon: SiC,
-//                 options: {
-//                     color: "#A8B9CC",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "C++",
-//                 Icon: SiCplusplus,
-//                 options: {
-//                     color: "#00599C",
-//                     size: 35
-//                 }
-//             }
-
-//         ]
-//     },
-//     {
-//         title: "Technology",
-//         data: [
-//             {
-//                 title: "Nodemailer",
-//                 Icon: MdEmail,
-//                 options: {
-//                     color: "#30B980",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "EmailJS",
-//                 Icon: MdEmail,
-//                 options: {
-//                     color: "#FF8434",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "Twilio",
-//                 Icon: SiTwilio,
-//                 options: {
-//                     color: "#F22F46",
-//                     size: 35
-//                 }
-//             }
-//         ]
-//     },
-//     {
-//         title: "Tools",
-//         data: [
-//             {
-//                 title: "VS Code",
-//                 Icon: VscVscode,
-//                 options: {
-//                     color: "#007ACC",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "Postman",
-//                 Icon: SiPostman,
-//                 options: {
-//                     color: "#FF6C37",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "MongoDB Compass",
-//                 Icon: SiMongodb,
-//                 options: {
-//                     color: "#47A248",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "Git",
-//                 Icon: SiGit,
-//                 options: {
-//                     color: "#F05032",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "GitHub",
-//                 Icon: SiGithub,
-//                 options: {
-//                     color: "#000000",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "NPM",
-//                 Icon: SiNpm,
-//                 options: {
-//                     color: "#CB3837",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "Vite",
-//                 Icon: SiVite,
-//                 options: {
-//                     color: "#646CFF",
-//                     size: 35
-//                 }
-//             },
-//             {
-//                 title: "ESLint",
-//                 Icon: SiEslint,
-//                 options: {
-//                     color: "#4B32C3",
-//                     size: 35
-//                 }
-//             }
-//         ]
-//     }
-// ]
 
 export const allSkills: AllSkillData[] = [
     {
