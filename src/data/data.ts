@@ -723,8 +723,8 @@ export const projectsData: ProjectCardProps[] = [
     {
         title: "cartSutra",
         slug: "cart-sutra",
-        github: "akscnalsknlaksknc",
-        live: "ljacsnaksncjkldn l",
+        // github: "akscnalsknlaksknc",
+        // live: "ljacsnaksncjkldn l",
         description:
             "A modern full-stack MERN e-commerce platform built with scalable architecture, secure authentication, reusable UI components, React Query integration, and responsive design.",
         status: "Developing",
