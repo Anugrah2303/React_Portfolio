@@ -65,7 +65,7 @@ const ContactForm = () => {
                     </div>
                 </div>
                 <div className="inputs my-5">
-                    <Textarea label="message" name="message" />
+                    <Textarea label="message" name="message" required />
                 </div>
                 <div className="text-center inputBtn" >
                     <Button value="Send Message" Icon={FaLocationArrow} type="submit" />
