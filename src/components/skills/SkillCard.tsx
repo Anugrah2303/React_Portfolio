@@ -13,7 +13,7 @@ const SkillCard = ({ title, Icon, options }: SkillCardProps) => {
             trigger: skillCard.current,
             direction: "down",
             start: "top bottom",
-            end: "+=300"
+            end: "+=100"
         })
     })
     return (

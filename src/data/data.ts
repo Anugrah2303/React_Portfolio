@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaWhatsapp, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaPaintBrush, FaServer, FaMobileAlt, FaCode, FaDatabase, FaLocationArrow } from "react-icons/fa"
 import type { LinkType, navLinksData, previewDataInterface, ProjectCardProps, verticalTimelineProps, whatAmIDoingProps, AllSkillData } from "../types/type"
 import { IoMdMail } from "react-icons/io"
-import { SiTailwindcss, SiJavascript, SiTypescript, SiGsap, SiMongodb, SiC, SiCplusplus, SiExpress, SiGit, SiGithub, SiNpm, SiVite, SiEslint, SiTwilio, SiPostman, SiNodemon, SiCloudinary, SiZod, SiAxios, SiReactquery, SiJsonwebtokens, SiReactrouter, SiRedux, SiAuth0, SiVercel, SiNetlify, SiGooglechrome, SiNextdotjs, SiReact, SiDotenv, SiRender, SiGreensock } from "react-icons/si"
+import { SiTailwindcss, SiJavascript, SiTypescript, SiGsap, SiMongodb, SiC, SiCplusplus, SiExpress, SiGit, SiGithub, SiNpm, SiVite, SiEslint, SiTwilio, SiPostman, SiNodemon, SiCloudinary, SiZod, SiAxios, SiReactquery, SiJsonwebtokens, SiReactrouter, SiRedux, SiAuth0, SiVercel, SiNetlify, SiGooglechrome, SiNextdotjs, SiReact, SiDotenv, SiRender, SiGreensock, SiScrollreveal } from "react-icons/si"
 import cartSutraImg from "../assets/images/cartSutra-thumbnail.png"
 import { FaCableCar } from "react-icons/fa6"
 import { FcContacts } from "react-icons/fc"
@@ -426,15 +426,15 @@ export const allSkills: AllSkillData[] = [
                 title: "ScrollTrigger",
                 Icon: SiGreensock,
                 options: {
-                    color: "#88CE02",
+                    color: "#000000",
                     size: 35
                 }
             },
             {
                 title: "Lenis",
-                Icon: SiJavascript,
+                Icon: SiScrollreveal,
                 options: {
-                    color: "#F7DF1E",
+                    color: "#000000",
                     size: 35
                 }
             },

@@ -49,7 +49,7 @@ const ContactForm = () => {
             direction: "right",
             distance: 150,
             start: "top bottom",
-            end: "+=300",
+            end: "+=200",
         })
     }, { scope: form })
 
