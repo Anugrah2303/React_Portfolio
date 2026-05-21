@@ -23,11 +23,11 @@ const Skills = () => {
     return (
         <>
             <section>
-                <div className="w-full flex flex-wrap justify-between mt-10 px-10">
-                    <div className="mb-5 mx-4">
+                <div className="w-full flex flex-wrap justify-between mt-10 px-10 gap-7">
+                    <div className="mb-2 mx-auto md:mx-4 md:mb-2">
                         <input className="border-b outline-none" value={search} placeholder="search" type="text" onInput={handleSearchInput} />
                     </div>
-                    <div className="flex flex-wrap gap-4 items-center justify-center">
+                    <div className="flex flex-wrap gap-4 items-center justify-center mx-auto md:mx-0">
                         {
                             skillsNavBtn.map((btn, index) => (
                                 btn.title == skillsState ? <Button value={btn.title} key={index} /> : <ButtonOutline value={btn.title} key={index} onClick={() => setSkillsState(btn.title)} />
