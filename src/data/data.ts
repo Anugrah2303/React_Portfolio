@@ -62,7 +62,7 @@ export const links: LinkType[] = [{
     link: "https://github.com/Anugrah2303"
 }, {
     icon: FaLinkedin,
-    link: "https://www.linkedin.com/in/rakholiya-anugrah-645449339/"
+    link: "https://www.linkedin.com/in/rakholiya-anugrah/"
 }, {
     icon: IoMdMail,
     link: "mailto:23bmmit081@gmail.com"
