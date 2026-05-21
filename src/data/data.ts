@@ -112,7 +112,6 @@ export const allSkills: AllSkillData[] = [
     {
         title: "Skills",
         data: [
-            // Frontend
             {
                 title: "HTML",
                 Icon: FaHtml5,
@@ -663,5 +662,20 @@ export const verticalTimelineData: verticalTimelineProps[] = [
                 cardDescription: "C Tsunami (C Language Competition) – Participated, showcasing programming and problem-solving skills."
             }
         ]
+    }
+]
+
+export const skillsNavBtn: {title: string}[] = [
+    {
+        title: "All"
+    },
+    {
+        title: "Skills"
+    },
+    {
+        title: "Technology"
+    },
+    {
+        title: "Tools"
     }
 ]

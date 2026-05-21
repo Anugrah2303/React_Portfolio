@@ -9,7 +9,7 @@ const SkillSection = ({title, data}: AllSkillData) => {
 
     useGSAPHeading(".heading", skills)
     return (
-        <div ref={skills} className='my-24'>
+        <div ref={skills} className='my-17'>
             <div className="heading mt-15">
                 <Heading title={title} center className="scale-130" />
             </div>

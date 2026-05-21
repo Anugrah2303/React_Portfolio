@@ -98,7 +98,7 @@ export interface inputProps {
     label: string
     name: string
     type?: string
-    required?: boolean
+    required?: boolean,
 }
 
 export interface verticalTimelineProps {
