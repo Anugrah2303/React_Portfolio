@@ -81,4 +81,5 @@
 
 body{
   background: var(--bg-main);
+  overflow-x: hidden;
 }
