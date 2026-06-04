@@ -61,7 +61,7 @@ const Hero = () => {
                             <h2 className="text-2xl text-(--avo-primary) font-secondary text-gsap">Hello , I'm </h2>
                             <h1 className="text-4xl text-(--avo-primary-dark) font-primary text-gsap">Anugrah Rakholiya.</h1>
                             <h3 className="text-(--text-secondary) text-gsap">I design & build professional websites. </h3>
-                            <p className="text-(--text-muted) text-gsap">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt tempora velit rerum atque? Ratione, sed. Cum ducimus quo inventore quam.</p>
+                            <p className="text-(--text-muted) text-gsap">Full Stack Developer specializing in React, Next.js, TypeScript, Node.js, Express.js, and MongoDB. I build responsive, scalable, and user-focused web applications with clean code and modern technologies.</p>
                             <div className="flex flex-wrap gap-3 my-4 ">
                                 <div className="btn-gsap">
                                     <Link to="projects" onClick={() => setSliderStat(true)}>
