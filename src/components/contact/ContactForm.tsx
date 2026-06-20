@@ -55,7 +55,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <form className="max-w-180 contactForm" ref={form} onSubmit={sendMail}>
+            <form className="max-w-180 contactForm overflow-hidden" ref={form} onSubmit={sendMail}>
                 <div className="flex flex-wrap gap-5 my-2">
                     <div className="inputs">
                         <Input label="Full Name" name="name" required />
