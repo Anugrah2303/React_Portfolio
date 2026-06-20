@@ -55,7 +55,7 @@ const Header = () => {
                     <div className="bg-(--bg-glass) backdrop-blur-xl border border-(--border-light) rounded-full px-5 md:px-10 py-3 flex justify-between items-center shadow-(--shadow-sm)">
 
                         <div className="logo">
-                            <Link to="/" className=" font-display text-2xl font-bold text-(--avo-primary-dark)">
+                            <Link to="/" className="font-display text-2xl font-bold text-(--avo-primary-dark)">
                                 Anu<span className="text-(--avo-primary)">grah</span>
                             </Link>
                         </div>
