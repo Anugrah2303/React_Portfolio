@@ -652,6 +652,11 @@ export const verticalTimelineData: verticalTimelineProps[] = [
         title: "Certificate",
         card: [
             {
+                cardTitle: "Full Stack Development",
+                cardSubTitle: "2025 - 2026",
+                cardDescription: "Full Stack Development training at Red & White Multimedia Education, focused on modern web technologies and real-world projects."
+            },
+            {
                 cardTitle: "NSS",
                 cardSubTitle: "2023 - 2024",
                 cardDescription: "Tree Plantation Drive (NSS, Uka Tarsadia University) – Actively participated in environmental sustainability initiative through organized plantation activity."
@@ -665,7 +670,7 @@ export const verticalTimelineData: verticalTimelineProps[] = [
     }
 ]
 
-export const skillsNavBtn: {title: string}[] = [
+export const skillsNavBtn: { title: string }[] = [
     {
         title: "All"
     },

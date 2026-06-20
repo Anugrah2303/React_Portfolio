@@ -62,7 +62,7 @@ const ProjectCard = ({ title, description, image, status, techStack, github, liv
     if (!context) return null;
 
     return (
-        <div ref={projectCardRef} className="mx-auto group relative overflow-hidden rounded-[28px] border   border-(--border-light) bg-(--bg-card) shadow-(--shadow-sm) transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(132,204,22,0.15)]">
+        <div ref={projectCardRef} className="w-84 group relative overflow-hidden rounded-[28px] border   border-(--border-light) bg-(--bg-card) shadow-(--shadow-sm) transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(132,204,22,0.15)]">
 
             <div className="absolute -top-20 -right-20 h-52 w-52 rounded-full bg-(--avo-primary)/10 blur-3xl opacity-100 transition-all duration-500 group-hover:opacity-100" />
 

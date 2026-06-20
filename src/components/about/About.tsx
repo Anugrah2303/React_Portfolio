@@ -16,7 +16,7 @@ const About = () => {
         <div className='aboutHeading'>
           <SubHeading title='What Am I Doing?' center />
         </div>
-        <div className='flex gap-5 flex-wrap my-15'>
+        <div className='gap-5 my-15 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))]'>
           {
             whatAmIDoing.map((item, index) => (
               <AboutCard key={index} title={item.title} description={item.description} Icon={item.Icon} options={{ size: 50 }} />

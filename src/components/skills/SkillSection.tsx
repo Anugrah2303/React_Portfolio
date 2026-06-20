@@ -14,7 +14,6 @@ const SkillSection = ({title, data}: AllSkillData) => {
                 <Heading title={title} center className="scale-130" />
             </div>
             <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-5 my-15 px-auto md:px-15">
-            {/* <div className="flex flex-wrap gap-5 my-15 px-auto md:px-15"> */}
                 {
                     data.map((elem, index) => (
                         <SkillCard key={index} title={elem.title} Icon={elem.Icon} options={elem.options} />

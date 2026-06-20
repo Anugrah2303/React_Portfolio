@@ -17,7 +17,7 @@ const Project = () => {
             <div className="projectHeading">
                 <Heading title="Projects" center className="scale-130" />
             </div>
-            <div className="flex my-15">
+            <div className="my-15 grid grid-cols-[repeat(auto-fit,minmax(335px,1fr))]  gap-y-8">
                 {
                     projectsData.map((project, index) => (
                         <ProjectCard key={index} description={project.description} status={project.status} slug={project.slug} title={project.title} image={project.image} techStack={project.techStack} github={project.github} live={project.live} />
