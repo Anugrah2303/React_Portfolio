@@ -2,7 +2,8 @@ import { FaGithub, FaLinkedin, FaWhatsapp, FaHtml5, FaCss3Alt, FaBootstrap, FaRe
 import type { LinkType, navLinksData, previewDataInterface, ProjectCardProps, verticalTimelineProps, whatAmIDoingProps, AllSkillData } from "../types/type"
 import { IoMdMail } from "react-icons/io"
 import { SiTailwindcss, SiJavascript, SiTypescript, SiGsap, SiMongodb, SiC, SiCplusplus, SiExpress, SiGit, SiGithub, SiNpm, SiVite, SiEslint, SiTwilio, SiPostman, SiNodemon, SiCloudinary, SiZod, SiAxios, SiReactquery, SiJsonwebtokens, SiReactrouter, SiRedux, SiAuth0, SiVercel, SiNetlify, SiGooglechrome, SiNextdotjs, SiReact, SiDotenv, SiRender, SiGreensock, SiScrollreveal } from "react-icons/si"
-import cartSutraImg from "../assets/images/cartSutra-thumbnail.png"
+import cartSutraBackend from "../assets/images/cartSutra backend.png"
+import cartSutraAdmin from "../assets/images/cartSutra - admin.jpg"
 import { HiAcademicCap } from "react-icons/hi"
 import { PiCertificateFill } from "react-icons/pi"
 import { MdEmail } from "react-icons/md"
@@ -505,135 +506,408 @@ export const allSkills: AllSkillData[] = [
     }
 ];
 
+// export const projectsData: ProjectCardProps[] = [
+//     {
+//         title: "cartSutra",
+//         slug: "cart-sutra",
+//         // github: "akscnalsknlaksknc",
+//         // live: "ljacsnaksncjkldn l",
+//         description:
+//             "A modern full-stack MERN e-commerce platform built with scalable architecture, secure authentication, reusable UI components, React Query integration, and responsive design.",
+//         status: "Developing",
+//         image: cartSutraImg,
+
+//         techStack: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "React Query", "Axios"],
+
+//         productDetail: {
+//             description: [
+//                 "cartSutra is a modern eco-friendly MERN e-commerce platform designed with scalability, performance, and clean UI architecture in mind.",
+//                 "The project focuses on reusable component design, secure authentication, optimized API handling, and responsive layouts for real-world production-level applications.",
+//                 "It includes role-based authentication, protected routes, reusable API abstraction, React Query integration, category management, and scalable frontend architecture.",
+//                 "The application follows modern development practices using TypeScript, custom hooks, centralized API management, and modular folder structures.",
+//                 "cartSutra aims to deliver a seamless shopping experience with clean animations, responsive product browsing, and reusable UI systems."
+//             ],
+
+//             techStack: [
+//                 {
+//                     title: "frontend",
+//                     data: ["React.js", "TypeScript", "Tailwind CSS", "React Router DOM", "React Query", "Axios", "React Hot Toast"]
+//                 },
+
+//                 {
+//                     title: "backend",
+//                     data: ["Node.js", "Express.js", "JWT Authentication", "Bcrypt", "Cookie-based Authentication", "REST API", "multer",]
+//                 },
+
+//                 {
+//                     title: "database",
+//                     data: ["MongoDB", "Mongoose", "cloudinary"]
+//                 },
+
+//                 {
+//                     title: "tools",
+//                     data: ["Git", "GitHub", "Netlify", "Postman", "VS Code"]
+//                 }
+//             ],
+
+//             detail: [
+//                 {
+//                     title: "Key Future",
+//                     data: [
+//                         {
+//                             title: "Authentication & Authorization",
+//                             description:
+//                                 "Implemented secure login and registration flow with protected routes and role-based access control for users and admins."
+//                         },
+
+//                         {
+//                             title: "Reusable API Architecture",
+//                             description:
+//                                 "Built a centralized Axios API handling system with TypeScript generics, automatic error handling, and toast notifications."
+//                         },
+
+//                         {
+//                             title: "Reusable UI Component System",
+//                             description:
+//                                 "Designed reusable buttons, inputs, headings, cards, and layouts to maintain scalability and consistent UI across the application."
+//                         },
+
+//                         {
+//                             title: "React Query Integration",
+//                             description:
+//                                 "Integrated React Query for optimized server-state management, API caching, mutation handling, and improved performance."
+//                         },
+
+//                         {
+//                             title: "Responsive Modern UI",
+//                             description:
+//                                 "Created a fully responsive eco-commerce design using Tailwind CSS, gradients, animations, and reusable styling variables."
+//                         },
+
+//                         {
+//                             title: "Scalable Folder Architecture",
+//                             description:
+//                                 "Structured the project using modular architecture with separate folders for hooks, components, APIs, layouts, routes, and types."
+//                         },
+
+//                         {
+//                             title: "Admin Dashboard Architecture",
+//                             description:
+//                                 "Prepared scalable admin routing and authorization architecture for future product, order, and user management systems."
+//                         }
+//                     ]
+//                 },
+//                 {
+//                     title: "Challenges",
+//                     data: [
+//                         {
+//                             title: "Protected Route Handling",
+//                             description:
+//                                 "Managing authentication persistence and protected navigation using React Router and React Query required careful state synchronization."
+//                         },
+
+//                         {
+//                             title: "Reusable TypeScript API Layer",
+//                             description:
+//                                 "Creating a fully reusable API abstraction with generic TypeScript support while handling multipart uploads and notifications was challenging."
+//                         },
+
+//                         {
+//                             title: "Scalable Component Design",
+//                             description:
+//                                 "Building reusable UI components that remain flexible, responsive, and maintainable across different pages required structured planning."
+//                         },
+
+//                         {
+//                             title: "State & Server Management",
+//                             description:
+//                                 "Optimizing API requests, caching, invalidation, and loading states using React Query improved performance but required proper architecture."
+//                         },
+
+//                         {
+//                             title: "Responsive E-Commerce Layout",
+//                             description:
+//                                 "Designing modern responsive layouts for categories, products, hero banners, and future dashboards while maintaining consistency was complex."
+//                         }
+//                     ]
+//                 }
+//             ]
+//         }
+//     }
+// ]
+
 export const projectsData: ProjectCardProps[] = [
-    {
-        title: "cartSutra",
-        slug: "cart-sutra",
-        // github: "akscnalsknlaksknc",
-        // live: "ljacsnaksncjkldn l",
-        description:
-            "A modern full-stack MERN e-commerce platform built with scalable architecture, secure authentication, reusable UI components, React Query integration, and responsive design.",
-        status: "Developing",
-        image: cartSutraImg,
-
-        techStack: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "React Query", "Axios"],
-
-        productDetail: {
-            description: [
-                "cartSutra is a modern eco-friendly MERN e-commerce platform designed with scalability, performance, and clean UI architecture in mind.",
-                "The project focuses on reusable component design, secure authentication, optimized API handling, and responsive layouts for real-world production-level applications.",
-                "It includes role-based authentication, protected routes, reusable API abstraction, React Query integration, category management, and scalable frontend architecture.",
-                "The application follows modern development practices using TypeScript, custom hooks, centralized API management, and modular folder structures.",
-                "cartSutra aims to deliver a seamless shopping experience with clean animations, responsive product browsing, and reusable UI systems."
-            ],
-
-            techStack: [
-                {
-                    title: "frontend",
-                    data: ["React.js", "TypeScript", "Tailwind CSS", "React Router DOM", "React Query", "Axios", "React Hot Toast"]
-                },
-
-                {
-                    title: "backend",
-                    data: ["Node.js", "Express.js", "JWT Authentication", "Bcrypt", "Cookie-based Authentication", "REST API", "multer",]
-                },
-
-                {
-                    title: "database",
-                    data: ["MongoDB", "Mongoose", "cloudinary"]
-                },
-
-                {
-                    title: "tools",
-                    data: ["Git", "GitHub", "Netlify", "Postman", "VS Code"]
-                }
-            ],
-
-            detail: [
-                {
-                    title: "Key Future",
-                    data: [
-                        {
-                            title: "Authentication & Authorization",
-                            description:
-                                "Implemented secure login and registration flow with protected routes and role-based access control for users and admins."
-                        },
-
-                        {
-                            title: "Reusable API Architecture",
-                            description:
-                                "Built a centralized Axios API handling system with TypeScript generics, automatic error handling, and toast notifications."
-                        },
-
-                        {
-                            title: "Reusable UI Component System",
-                            description:
-                                "Designed reusable buttons, inputs, headings, cards, and layouts to maintain scalability and consistent UI across the application."
-                        },
-
-                        {
-                            title: "React Query Integration",
-                            description:
-                                "Integrated React Query for optimized server-state management, API caching, mutation handling, and improved performance."
-                        },
-
-                        {
-                            title: "Responsive Modern UI",
-                            description:
-                                "Created a fully responsive eco-commerce design using Tailwind CSS, gradients, animations, and reusable styling variables."
-                        },
-
-                        {
-                            title: "Scalable Folder Architecture",
-                            description:
-                                "Structured the project using modular architecture with separate folders for hooks, components, APIs, layouts, routes, and types."
-                        },
-
-                        {
-                            title: "Admin Dashboard Architecture",
-                            description:
-                                "Prepared scalable admin routing and authorization architecture for future product, order, and user management systems."
-                        }
-                    ]
-                },
-                {
-                    title: "Challenges",
-                    data: [
-                        {
-                            title: "Protected Route Handling",
-                            description:
-                                "Managing authentication persistence and protected navigation using React Router and React Query required careful state synchronization."
-                        },
-
-                        {
-                            title: "Reusable TypeScript API Layer",
-                            description:
-                                "Creating a fully reusable API abstraction with generic TypeScript support while handling multipart uploads and notifications was challenging."
-                        },
-
-                        {
-                            title: "Scalable Component Design",
-                            description:
-                                "Building reusable UI components that remain flexible, responsive, and maintainable across different pages required structured planning."
-                        },
-
-                        {
-                            title: "State & Server Management",
-                            description:
-                                "Optimizing API requests, caching, invalidation, and loading states using React Query improved performance but required proper architecture."
-                        },
-
-                        {
-                            title: "Responsive E-Commerce Layout",
-                            description:
-                                "Designing modern responsive layouts for categories, products, hero banners, and future dashboards while maintaining consistency was complex."
-                        }
-                    ]
-                }
-            ]
-        }
-    }
-]
+  {
+    title: "cartSutra — Backend API",
+    slug: "cartsutra-backend",
+    description:
+      "A production-grade multi-vendor e-commerce REST API built with Node.js, Express 5, TypeScript, and MongoDB — covering catalog, cart/checkout, payments, vendor payouts, returns/refunds, shipping, reviews, CMS, and analytics.",
+    status: "LIVE",
+    image: cartSutraBackend,
+    github: "https://github.com/Anugrah2303/cartSutra-backend",
+    live: "https://cartsutra-backend.onrender.com/v3/api",
+    techStack: [
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "Zod",
+      "JWT",
+      "Bcrypt",
+      "Multer",
+      "Cloudinary",
+      "Razorpay",
+      "Nodemailer",
+    ],
+    productDetail: {
+      description: [
+        "cartSutra's backend is a modular multi-vendor marketplace API supporting three roles — customer, vendor, and admin — with role-based route protection at every layer.",
+        "It models the full commerce lifecycle: product approval workflows, cart and checkout with coupon/gift-card stacking, Razorpay payments with webhook verification, order status flows, vendor-owned shipments, returns, and a refund service that handles both gateway and wallet refunds.",
+        "Vendor operations are fully self-serve — vendors manage their own products, variants, warehouses, inventory logs, KYC documents, and payout requests — while a single admin surface can act on any vendor's data via shared, ownership-aware controllers.",
+        "A generic queryFeatures helper standardizes pagination, sorting, and aggregation pipelines across ~30 resources, and a centralized ApiError/asyncHandler pattern keeps error handling and response shape consistent throughout.",
+        "The API also includes a lightweight CMS (banners, pages, blogs), a notification system with audience targeting, and analytics endpoints for sales, top products/vendors, category performance, and customer growth."
+      ],
+      techStack: [
+        {
+          title: "core",
+          data: ["Node.js", "Express.js 5", "TypeScript", "ESM modules"],
+        },
+        {
+          title: "data & validation",
+          data: ["MongoDB", "Mongoose", "Zod schema validation", "Aggregation pipelines"],
+        },
+        {
+          title: "auth & security",
+          data: [
+            "JWT (cookie-based)",
+            "Bcrypt password hashing",
+            "OTP-based email verification",
+            "Role-based authorization",
+            "CSRF double-submit protection",
+            "Helmet",
+            "express-rate-limit",
+          ],
+        },
+        {
+          title: "integrations",
+          data: ["Razorpay (orders, refunds, webhooks)", "Cloudinary (media uploads)", "Nodemailer (transactional email)", "Multer (multipart uploads)"],
+        },
+        {
+          title: "tooling",
+          data: ["tsx", "Git", "GitHub", "Postman", "Render (deployment)"],
+        },
+      ],
+      detail: [
+        {
+          title: "Key Features",
+          data: [
+            {
+              title: "Multi-vendor product lifecycle",
+              description:
+                "Vendors submit products for review; admins approve/reject with reason tracking and a full approval-history audit trail before a product becomes purchasable.",
+            },
+            {
+              title: "Cart, coupons & gift cards",
+              description:
+                "Cart supports variant-aware items, coupon discounts (percentage/flat with caps), and gift-card redemption, all reconciled at checkout into a locked order snapshot.",
+            },
+            {
+              title: "Payments & refunds",
+              description:
+                "Razorpay order creation, signature-verified payment confirmation, raw-body webhook handling, and a dedicated refund service supporting original-payment, wallet, and UPI refund methods.",
+            },
+            {
+              title: "Order → shipment → return pipeline",
+              description:
+                "Orders drive per-vendor shipments with a tracked status flow; delivered orders can be returned within a configurable window, triggering pickup scheduling and automatic refund + inventory restock.",
+            },
+            {
+              title: "Vendor payouts & wallet",
+              description:
+                "Vendor revenue accrues to a wallet on delivery (net of commission); vendors request payouts against a minimum threshold, with admin approve/reject and automatic wallet reversal on rejection.",
+            },
+            {
+              title: "Inventory & warehouse management",
+              description:
+                "Every stock change (restock, damage, adjustment, order, return) is logged with before/after quantities; vendors can operate multiple warehouses and assign products to them.",
+            },
+            {
+              title: "Reviews, ratings & moderation",
+              description:
+                "Verified-purchase reviews with vendor replies, helpful/not-helpful voting, user reporting, and admin moderation that recalculates product and vendor rating aggregates.",
+            },
+            {
+              title: "CMS, notifications & analytics",
+              description:
+                "Admin-managed banners/pages/blogs, audience-targeted notifications (user/role/broadcast), and analytics endpoints for revenue trends, top sellers, and low-stock alerts.",
+            },
+          ],
+        },
+        {
+          title: "Engineering Challenges",
+          data: [
+            {
+              title: "Consistent ownership scoping",
+              description:
+                "Nearly every vendor-facing route also had to work for admins acting on a vendor's behalf, requiring a repeatable pattern for conditionally scoping Mongo filters by role rather than duplicating controllers.",
+            },
+            {
+              title: "Idempotent payment & refund flows",
+              description:
+                "Reconciling Razorpay webhooks with direct client-confirmed payments (which can race each other) while keeping order payment status and refund ledgers accurate required careful status-guarded writes.",
+            },
+            {
+              title: "Cross-resource financial consistency",
+              description:
+                "Vendor revenue, wallet balance, and platform-side refunds all had to stay in sync across order delivery, cancellation, and return-refund paths without double-crediting or under-reversing commission.",
+            },
+            {
+              title: "Generic, reusable querying",
+              description:
+                "Building a single queryFeatures utility that transparently supports both plain Mongoose queries and complex aggregation pipelines (with pagination baked in) across dozens of differently-shaped resources.",
+            },
+            {
+              title: "Security hardening on a cross-origin admin app",
+              description:
+                "Supporting `sameSite: none` cookies across separate admin/vendor/client origins safely required layering in CSRF double-submit tokens, strict CORS allowlists, and per-route rate limiting.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    title: "cartSutra — Admin Panel",
+    slug: "cartsutra-admin",
+    description:
+      "A full-featured React + TypeScript admin dashboard for operating the cartSutra marketplace — products, orders, vendors, payments, shipping, returns, CMS, analytics, and more, all backed by React Query and a themeable design system.",
+    status: "LIVE",
+    image: cartSutraAdmin,
+    github: "https://github.com/Anugrah2303/cartSutra-admin",
+    live: "https://cart-sutra-admin-delta.vercel.app/admin",
+    techStack: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "React Query",
+      "React Router",
+      "React Hook Form",
+      "Zod",
+      "Recharts",
+      "Axios",
+    ],
+    productDetail: {
+      description: [
+        "The cartSutra Admin Panel is a single-page dashboard giving marketplace operators full control over catalog, commerce, vendor, and content operations — 20+ management modules behind one consistent UI shell.",
+        "Every list view follows the same pattern: server-driven filters/pagination via React Query, optimistic-feeling mutations with toast feedback, and consistent skeleton loading states so the UI never feels empty or janky.",
+        "The app implements soft-delete/trash-and-restore flows for core entities (products, categories, brands, coupons, gift cards), approval workflows for vendors and products, and detail pages with inline editing for complex records like orders, vendors, and shipments.",
+        "A global cross-entity search, a live notification bell, and role-aware navigation badges (pending vendors, failed shipments, unread alerts) keep operators oriented without needing to visit every page.",
+        "Theming is CSS-variable driven with light/dark support, and the component layer (buttons, modals, tables, forms) is fully reusable across all 20+ feature areas rather than duplicated per page."
+      ],
+      techStack: [
+        {
+          title: "core",
+          data: ["React 19", "TypeScript", "Vite", "React Router v7"],
+        },
+        {
+          title: "state & data",
+          data: ["TanStack React Query", "Axios", "Custom useApiQuery/useApiMutation hooks", "Optimistic invalidation patterns"],
+        },
+        {
+          title: "forms & validation",
+          data: ["React Hook Form", "Zod", "@hookform/resolvers"],
+        },
+        {
+          title: "ui & styling",
+          data: ["Tailwind CSS v4", "CSS custom properties theming (light/dark)", "Lucide icons", "Recharts (analytics charts)", "Sonner (toasts)"],
+        },
+        {
+          title: "tooling",
+          data: ["ESLint", "Git", "GitHub", "Vercel (deployment)"],
+        },
+      ],
+      detail: [
+        {
+          title: "Key Features",
+          data: [
+            {
+              title: "20+ management modules",
+              description:
+                "Products, categories, brands, orders, shipping, returns, refunds, vendors, vendor payouts, customers, reviews, coupons, gift cards, warehouses, tickets, notifications, CMS, admins, settings, and analytics — each with dedicated filters, tables, and detail views.",
+            },
+            {
+              title: "Reusable data-table & form system",
+              description:
+                "A shared set of components (Card, Modal, Pagination, ConfirmDialog, ReasonModal, StatusToggle, skeletons) drives every module, so new features compose from existing primitives instead of custom-building UI.",
+            },
+            {
+              title: "Approval & moderation workflows",
+              description:
+                "Vendor onboarding and product listings go through approve/reject flows with required rejection reasons; reviews support report resolution and visibility toggling.",
+            },
+            {
+              title: "Order, shipment & return operations",
+              description:
+                "Detail modals let admins advance order/shipment statuses along a validated flow, assign couriers, process refunds, and walk returns through approve → pickup → receive → refund.",
+            },
+            {
+              title: "Trash & restore across core entities",
+              description:
+                "Products, categories, brands, coupons, and gift cards support soft-delete with a dedicated trash view, restore, and permanent-delete actions to prevent accidental data loss.",
+            },
+            {
+              title: "Global search & live notifications",
+              description:
+                "A debounced cross-entity search queries 18+ resource types in parallel, and a notification bell with unread counts and mark-as-read keeps admins aware of platform activity in real time.",
+            },
+            {
+              title: "Analytics & reporting dashboard",
+              description:
+                "Dashboard and Reports pages visualize revenue trends, top products/vendors, category sales, customer growth, and order-status distribution using Recharts, with date-range filtering throughout.",
+            },
+            {
+              title: "Theming & responsive design",
+              description:
+                "A CSS-variable-based theme system supports light/dark mode across the entire app, with fully responsive table→card layouts for mobile and tablet breakpoints.",
+            },
+          ],
+        },
+        {
+          title: "Engineering Challenges",
+          data: [
+            {
+              title: "Consistent async UX at scale",
+              description:
+                "Standardizing loading (skeletons), empty, and error states across 20+ independently-built modules required a shared skeleton component library rather than ad hoc spinners per page.",
+            },
+            {
+              title: "Complex multi-step detail workflows",
+              description:
+                "Screens like order/shipment/return detail modals needed to reset local form state cleanly when switching records without stale state leaking between selections — solved with derived-state patterns instead of effects.",
+            },
+            {
+              title: "Type-safe forms over a large, evolving API surface",
+              description:
+                "Keeping React Hook Form + Zod schemas in sync with backend validators across dozens of multipart and JSON endpoints, including FormData construction for image uploads mixed with structured fields.",
+            },
+            {
+              title: "Cross-cutting global search",
+              description:
+                "Building a single search experience that fans out to 18+ differently-shaped list endpoints (some paginated as `data`, others as named keys like `coupons`) required a normalized extraction layer per category.",
+            },
+            {
+              title: "Cache coherency across related resources",
+              description:
+                "Actions in one module (e.g. processing a refund) needed to correctly invalidate related React Query caches (orders, refunds, payouts) to keep numbers consistent across the dashboard without manual refreshes.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+];
 
 export const verticalTimelineData: verticalTimelineProps[] = [
     {
