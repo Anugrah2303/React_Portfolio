@@ -16,7 +16,7 @@ export const previewData: previewDataInterface[] = [
     {
         Icon: IoMdMail,
         title: "Email",
-        data: "anugrahrakholiya3@gmail.com",
+        data: "23bmiit081@gmail.com",
     },
     {
         Icon: LuContactRound,
