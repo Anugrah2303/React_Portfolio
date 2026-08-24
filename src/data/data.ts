@@ -16,7 +16,7 @@ export const previewData: previewDataInterface[] = [
     {
         Icon: IoMdMail,
         title: "Email",
-        data: "23bmiit081@gmail.com",
+        data: "anugrahrakholiya3@gmail.com",
     },
     {
         Icon: LuContactRound,
@@ -506,135 +506,6 @@ export const allSkills: AllSkillData[] = [
     }
 ];
 
-// export const projectsData: ProjectCardProps[] = [
-//     {
-//         title: "cartSutra",
-//         slug: "cart-sutra",
-//         // github: "akscnalsknlaksknc",
-//         // live: "ljacsnaksncjkldn l",
-//         description:
-//             "A modern full-stack MERN e-commerce platform built with scalable architecture, secure authentication, reusable UI components, React Query integration, and responsive design.",
-//         status: "Developing",
-//         image: cartSutraImg,
-
-//         techStack: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "React Query", "Axios"],
-
-//         productDetail: {
-//             description: [
-//                 "cartSutra is a modern eco-friendly MERN e-commerce platform designed with scalability, performance, and clean UI architecture in mind.",
-//                 "The project focuses on reusable component design, secure authentication, optimized API handling, and responsive layouts for real-world production-level applications.",
-//                 "It includes role-based authentication, protected routes, reusable API abstraction, React Query integration, category management, and scalable frontend architecture.",
-//                 "The application follows modern development practices using TypeScript, custom hooks, centralized API management, and modular folder structures.",
-//                 "cartSutra aims to deliver a seamless shopping experience with clean animations, responsive product browsing, and reusable UI systems."
-//             ],
-
-//             techStack: [
-//                 {
-//                     title: "frontend",
-//                     data: ["React.js", "TypeScript", "Tailwind CSS", "React Router DOM", "React Query", "Axios", "React Hot Toast"]
-//                 },
-
-//                 {
-//                     title: "backend",
-//                     data: ["Node.js", "Express.js", "JWT Authentication", "Bcrypt", "Cookie-based Authentication", "REST API", "multer",]
-//                 },
-
-//                 {
-//                     title: "database",
-//                     data: ["MongoDB", "Mongoose", "cloudinary"]
-//                 },
-
-//                 {
-//                     title: "tools",
-//                     data: ["Git", "GitHub", "Netlify", "Postman", "VS Code"]
-//                 }
-//             ],
-
-//             detail: [
-//                 {
-//                     title: "Key Future",
-//                     data: [
-//                         {
-//                             title: "Authentication & Authorization",
-//                             description:
-//                                 "Implemented secure login and registration flow with protected routes and role-based access control for users and admins."
-//                         },
-
-//                         {
-//                             title: "Reusable API Architecture",
-//                             description:
-//                                 "Built a centralized Axios API handling system with TypeScript generics, automatic error handling, and toast notifications."
-//                         },
-
-//                         {
-//                             title: "Reusable UI Component System",
-//                             description:
-//                                 "Designed reusable buttons, inputs, headings, cards, and layouts to maintain scalability and consistent UI across the application."
-//                         },
-
-//                         {
-//                             title: "React Query Integration",
-//                             description:
-//                                 "Integrated React Query for optimized server-state management, API caching, mutation handling, and improved performance."
-//                         },
-
-//                         {
-//                             title: "Responsive Modern UI",
-//                             description:
-//                                 "Created a fully responsive eco-commerce design using Tailwind CSS, gradients, animations, and reusable styling variables."
-//                         },
-
-//                         {
-//                             title: "Scalable Folder Architecture",
-//                             description:
-//                                 "Structured the project using modular architecture with separate folders for hooks, components, APIs, layouts, routes, and types."
-//                         },
-
-//                         {
-//                             title: "Admin Dashboard Architecture",
-//                             description:
-//                                 "Prepared scalable admin routing and authorization architecture for future product, order, and user management systems."
-//                         }
-//                     ]
-//                 },
-//                 {
-//                     title: "Challenges",
-//                     data: [
-//                         {
-//                             title: "Protected Route Handling",
-//                             description:
-//                                 "Managing authentication persistence and protected navigation using React Router and React Query required careful state synchronization."
-//                         },
-
-//                         {
-//                             title: "Reusable TypeScript API Layer",
-//                             description:
-//                                 "Creating a fully reusable API abstraction with generic TypeScript support while handling multipart uploads and notifications was challenging."
-//                         },
-
-//                         {
-//                             title: "Scalable Component Design",
-//                             description:
-//                                 "Building reusable UI components that remain flexible, responsive, and maintainable across different pages required structured planning."
-//                         },
-
-//                         {
-//                             title: "State & Server Management",
-//                             description:
-//                                 "Optimizing API requests, caching, invalidation, and loading states using React Query improved performance but required proper architecture."
-//                         },
-
-//                         {
-//                             title: "Responsive E-Commerce Layout",
-//                             description:
-//                                 "Designing modern responsive layouts for categories, products, hero banners, and future dashboards while maintaining consistency was complex."
-//                         }
-//                     ]
-//                 }
-//             ]
-//         }
-//     }
-// ]
 
 export const projectsData: ProjectCardProps[] = [
   {
