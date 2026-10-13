@@ -1,38 +1,46 @@
-import type { gsapTriggerFadeProps } from "../types/animations";
-import gsap from "../lib/gsap"
+import type { Cleanup, gsapTriggerFadeProps } from "../types/animations";
+import gsap from "../lib/gsap";
+import { getOffset } from "./utils";
 
-const triggerFade = ({ target, delay = 0, duration = 0.6, direction = "up", distance = 40, start, end, scrub = true }: gsapTriggerFadeProps) => {
+/** Scroll-triggered fade. Plays once (or scrubs if scrub is set). */
+const triggerFade = ({
+  target,
+  delay = 0,
+  duration = 1.1,
+  direction = "up",
+  distance = 50,
+  start = "top 88%",
+  end = "top 55%",
+  scrub = false,
+}: gsapTriggerFadeProps): Cleanup => {
+  const elems = gsap.utils.toArray<HTMLElement>(target as string);
+  if (!elems.length) return () => {};
 
-    const elems = gsap.utils.toArray<HTMLElement>(target as gsap.DOMTarget)
+  const { x, y } = getOffset(direction, distance);
 
-    const x = direction === "left" ? -distance : direction === "right" ? distance : 0
-    const y = direction === "up" ? distance : direction === "down" ? -distance : 0
-
-
-    const animations = elems.map((elem) =>
-        gsap.from(elem, {
-            x,
-            y,
-            opacity: 0,
-            delay,
-            duration,
-            ease: "power3.out",
-            scrollTrigger: {
-                trigger: elem,
-                start,
-                end,
-                scrub
-            }
-        })
+  const tweens = elems.map((elem) =>
+    gsap.fromTo(
+      elem,
+      { x, y, autoAlpha: 0 },
+      {
+        x: 0,
+        y: 0,
+        autoAlpha: 1,
+        ease: scrub ? "none" : "expo.out",
+        force3D: true,
+        // duration/delay do nothing when scrubbing, so only set them when not
+        ...(scrub ? {} : { duration, delay, clearProps: "transform,opacity,visibility" }),
+        scrollTrigger: { trigger: elem, start, end, scrub, once: !scrub },
+      }
     )
+  );
 
-    return () => {
-        animations.forEach(anim => {
-            anim.scrollTrigger?.kill();
-            anim.kill();
-        });
-    };
+  return () => {
+    tweens.forEach((t) => {
+      t.scrollTrigger?.kill();
+      t.kill();
+    });
+  };
+};
 
-}
-
-export default triggerFade
+export default triggerFade;

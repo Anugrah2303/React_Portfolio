@@ -1,14 +1,35 @@
 import type { gsapFadeProps } from "../types/animations";
-import gsap from "../lib/gsap"
+import gsap from "../lib/gsap";
+import { getOffset } from "./utils";
 
-const fade = ({ target, timeline, delay = 0, duration = 0.6, stagger = 0, direction = "up", distance = 40, position = "" }: gsapFadeProps) => {
+/** Immediate (non-scroll) fade. Use for load sequences. */
+const fade = ({
+  target,
+  timeline,
+  delay = 0,
+  duration = 1.1,
+  stagger = 0,
+  direction = "up",
+  distance = 50,
+  position,
+}: gsapFadeProps) => {
+  const { x, y } = getOffset(direction, distance);
 
-    const x = direction === "left" ? -distance : direction === "right" ? distance : 0
-    const y = direction === "up" ? distance : direction === "down" ? -distance : 0
+  const vars: gsap.TweenVars = {
+    x,
+    y,
+    autoAlpha: 0,
+    delay,
+    duration,
+    stagger,
+    ease: "expo.out",
+    force3D: true,
+    clearProps: "transform,opacity,visibility",
+  };
 
-    if (timeline) return timeline.from(target, { x, y, opacity: 0, delay, duration, stagger, ease: "power3.out" }, position);
+  // position must be undefined (not "") or GSAP mis-places the tween
+  if (timeline) return timeline.from(target, vars, position || undefined);
+  return gsap.from(target, vars);
+};
 
-    return gsap.from(target, { x, y, opacity: 0, delay, duration, stagger, ease: "power3.out" });
-}
-
-export default fade
+export default fade;
